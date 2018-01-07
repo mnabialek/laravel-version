@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/mnabialek/laravel-version.svg?branch=master)](https://travis-ci.org/mnabialek/laravel-version)
 [![Coverage Status](https://coveralls.io/repos/github/mnabialek/laravel-version/badge.svg)](https://coveralls.io/github/mnabialek/laravel-version)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mnabialek/laravel-version/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mnabialek/laravel-version/badges/quality-score.png?b=master)
-![Packagist](https://img.shields.io/packagist/dt/mnabialek/laravel-version.svg)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mnabialek/laravel-version/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mnabialek/laravel-version/)
+[![Packagist](https://img.shields.io/packagist/dt/mnabialek/laravel-version.svg)](https://packagist.org/packages/mnabialek/laravel-version)
 
 This package let you verify whether current application is `Laravel` or `Lumen`, get application version and verify whether application is minimum at given version string.
 
@@ -28,7 +28,16 @@ $version = app()->make(\Mnabialek\LaravelVersion\Version);
 (you can obviously use dependency injection) and then use one of available methods for example like this
 
 ```php
-$result = $version->isLaravel()
+$result = $version->isLaravel();
+```
+
+or
+
+```php
+if ($version->isLaravel()) {
+   // do something
+}
+
 ```
 
 ## Available methods
