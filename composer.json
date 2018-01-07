@@ -1,0 +1,20 @@
+{
+    "name": "mnabialek/laravel-version",
+    "description": "Get Laravel/Lumen version",
+    "keywords": [
+        "laravel",
+        "lumen",
+        "laravel version",
+        "lumen version"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcin Nabiałek",
+            "email": "dev@nabialek.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
