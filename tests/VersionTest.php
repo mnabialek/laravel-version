@@ -18,7 +18,7 @@ class VersionTest extends UnitTestCase
      */
     protected $version;
 
-    public function setUp()
+    protected function setUp()
     {
         $this->app = Mockery::mock(Application::class);
         $this->version = new Version($this->app);
