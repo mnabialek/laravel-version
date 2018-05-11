@@ -2,21 +2,21 @@
 
 namespace Mnabialek\LaravelVersion;
 
-use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Container\Container;
 
 class Version
 {
     /**
-     * @var Application
+     * @var Container
      */
     private $app;
 
     /**
      * Version constructor.
      *
-     * @param Application $app
+     * @param Container $app
      */
-    public function __construct(Application $app)
+    public function __construct(Container $app)
     {
         $this->app = $app;
     }

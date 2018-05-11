@@ -2,14 +2,14 @@
 
 namespace Mnabialek\LaravelVersion\Tests;
 
-use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Container\Container;
 use Mockery;
 use Mnabialek\LaravelVersion\Version;
 
 class VersionTest extends UnitTestCase
 {
     /**
-     * @var Application
+     * @var Container
      */
     protected $app;
 
@@ -20,7 +20,7 @@ class VersionTest extends UnitTestCase
 
     protected function setUp()
     {
-        $this->app = Mockery::mock(Application::class);
+        $this->app = Mockery::mock(Container::class);
         $this->version = new Version($this->app);
     }
 
